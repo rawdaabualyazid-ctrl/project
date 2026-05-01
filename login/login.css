@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:0 ;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    color:#fff ;
+    background: black;
+    width: 100%;
+    gap: 58px;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow-x:0 ;
+
+    span{
+        text-decoration:underline;
+    }
+}
+
+@media screen and (min-width:993px) {
+    header{
+        gap:500px;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    header{
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       gap: 30px;}
+    }       
+
+.exc{
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    .links{
+        text-decoration: none;
+        justify-content: space-between;
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+
+    a{
+        text-decoration: none;
+        color: black;
+
+    }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .exc{
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       gap: 30px;}
+    }       
+
+
+.search{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    padding: 10px;
+    margin: 9px;
+
+    img{
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
+        align-items: center;
+        bottom: 10px;
+        right: 15px;
+    }
+
+    input{
+        
+        border: 0;
+        outline: 0;
+        width: 300px;
+        font-weight:lighter;
+        font-size:17px;
+        padding: 10px;
+        
+        background: rgba(164, 161, 168, 0.4);
+        opacity: 0.5;
+    }
+}
+nav{
+    
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+      flex: 1;
+       text-align: right;
+
+       li{
+           display: inline-block;
+           list-style: none;
+           margin: 10px 20px;
+    }
+ }
+}
+
+.log-in{
+    padding:30px ;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 70px;
+
+    .phone img{
+        width: 350px;
+    
+    }
+
+    .sive{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+
+        input{
+            padding: 4px;
+            width: 300px;
+            border: none;
+            border-bottom: 1px solid #cfd3d5;
+            background: rgba(234, 231, 239, 0.4);
+
+        }
+    }
+
+    .butt {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        button{
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+            background: #DB4444;
+            color: #fff;
+        }
+
+        p{
+            color: #DB4444;
+        }
+    }
+
+}
+
+@media screen and (min-width:993px) {
+    .log-in{
+        gap:100px;
+
+        .phone img{
+            width: 650px;
+            padding: 0 90px;
+            align-items: center;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width:768px) {
+    .log-in{
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       gap: 30px;}
+    }       
+
+
+
+footer{
+    background: black;
+    color: #FFFFFF;
+    padding: 20px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .div1{
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+    
+
+          .enter{
+            position: relative;
+            input{
+             width: 200px;
+             height: 30px;
+             background-color: black;
+             border: 2px solid #FFFFFF;
+             border-radius: 5px;
+             padding: 5px;
+             border-radius: 7px;
+             
+           }
+           img{
+            position: absolute;
+            width: 30px;
+            right: 3px;
+
+           }
+          
+          }
+        }
+
+        .div2 , .div3 , .div4{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .div2 a{
+            text-decoration: none;
+            color: #FFFFFF;
+
+        }
+        .div5{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .app{
+                padding: 30px;
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+
+                .code{
+                    width: 100px;
+                    height: 100px;
+                }
+                .google{
+                    gap: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                .google-img{
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid#FFFFFF  ;
+                    border-radius: 5px;
+                    padding: 5px 0 5px;
+
+                    img{
+                        width: 30px;
+                    }
+                }
+            }
+
+            .App-img{
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #FFFFFF  ;
+                    border-radius: 5px;
+                    padding: 5px ;
+
+                    .app-contant p{
+                        font-size: 9px;
+                        text-align: center;
+                    }
+
+                    img{
+                        width: 30px;
+                    }
+                }
+            }
+        }
+
+        .social{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+        }
+    }
+
+    p{
+        text-align: center;
+        
+        
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .container{
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       gap: 30px;
+
+       .div1 , .div2 , .div3 , .div4 ,.div5{
+        width: 100%;
+
+       }
+       .code{
+        transform: scale(0.8);
+       }
+
+    }
+    
+}
+
+
